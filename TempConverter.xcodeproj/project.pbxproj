@@ -15,6 +15,7 @@
 		386C8CD81ED5F18A00C90009 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 386C8CD61ED5F18A00C90009 /* LaunchScreen.storyboard */; };
 		386C8CE31ED5F18A00C90009 /* TempConverterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386C8CE21ED5F18A00C90009 /* TempConverterTests.swift */; };
 		386C8CEE1ED5F18A00C90009 /* TempConverterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386C8CED1ED5F18A00C90009 /* TempConverterUITests.swift */; };
+		389F3FC21EDA30E000B616EE /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389F3FC11EDA30E000B616EE /* MapViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		386C8CE91ED5F18A00C90009 /* TempConverterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TempConverterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		386C8CED1ED5F18A00C90009 /* TempConverterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempConverterUITests.swift; sourceTree = "<group>"; };
 		386C8CEF1ED5F18A00C90009 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		389F3FC11EDA30E000B616EE /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 				386C8CD41ED5F18A00C90009 /* Assets.xcassets */,
 				386C8CD61ED5F18A00C90009 /* LaunchScreen.storyboard */,
 				386C8CD91ED5F18A00C90009 /* Info.plist */,
+				389F3FC11EDA30E000B616EE /* MapViewController.swift */,
 			);
 			path = TempConverter;
 			sourceTree = "<group>";
@@ -275,6 +278,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				386C8CCE1ED5F18A00C90009 /* AppDelegate.swift in Sources */,
+				389F3FC21EDA30E000B616EE /* MapViewController.swift in Sources */,
 				384A24EB1ED6E6310074B20E /* ConvertionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

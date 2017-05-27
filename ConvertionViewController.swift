@@ -37,14 +37,29 @@ class ConvertionViewController: UIViewController, UITextFieldDelegate {
         return nf
     }()
     
-    
+    override func viewWillAppear(_ animated: Bool) {
+        
+        //change the background color depending on day or night
+        let calendar = NSCalendar.current
+        let hour = calendar.component(.hour, from: NSDate() as Date)
+        
+        if hour >= 6 && hour <= 18 {
+            view.backgroundColor = UIColor.lightGray
+        }
+        else {
+            view.backgroundColor = UIColor.darkGray
+        }
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        print("ConvertionViewController loads its view")
         
         updateCelciusLabel()
     }
     
     @IBAction func valueChanged(_ sender: UITextField) {
+        
         if let text = sender.text, let value = Double(text) {
             fahrenheitValue = Measurement(value: value, unit: .fahrenheit)
         }
@@ -54,10 +69,12 @@ class ConvertionViewController: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func dismissKeyboard (_ sender: UITapGestureRecognizer) {
+        
         textField.resignFirstResponder()
     }
     
     func updateCelciusLabel() {
+        
         if let celciusValue = celciusValue {
             celciusLabel.text = numberFormatter.string(from: NSNumber(value: celciusValue.value))
         }
@@ -67,6 +84,8 @@ class ConvertionViewController: UIViewController, UITextFieldDelegate {
     }
     
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        
+        //prevent user to input alphabetic characters
         let currentTextHasDecimalSeparator = textField.text?.range(of: ".")
         let replacementTextHasDecimalSeparator = string.range(of: ".")
         let allowedCharacterSet = CharacterSet(charactersIn: "0123456789.")
@@ -86,7 +105,4 @@ class ConvertionViewController: UIViewController, UITextFieldDelegate {
             return true
         }
     }
-    
-    
-    
 }

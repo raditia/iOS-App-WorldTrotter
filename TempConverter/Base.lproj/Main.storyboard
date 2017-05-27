@@ -95,7 +95,7 @@
         <!--Map-->
         <scene sceneID="2Jw-iJ-0et">
             <objects>
-                <viewController id="tu0-8r-s02" sceneMemberID="viewController">
+                <viewController id="tu0-8r-s02" customClass="MapViewController" customModule="TempConverter" customModuleProvider="target" sceneMemberID="viewController">
                     <mapView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" id="Pob-Aj-pU5">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
