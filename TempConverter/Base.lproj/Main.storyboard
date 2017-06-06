@@ -92,20 +92,6 @@
             </objects>
             <point key="canvasLocation" x="977" y="901"/>
         </scene>
-        <!--Map-->
-        <scene sceneID="2Jw-iJ-0et">
-            <objects>
-                <viewController id="tu0-8r-s02" customClass="MapViewController" customModule="TempConverter" customModuleProvider="target" sceneMemberID="viewController">
-                    <mapView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" id="Pob-Aj-pU5">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    </mapView>
-                    <tabBarItem key="tabBarItem" title="Map" image="MapIcon" id="dRW-ms-xKT"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="SuV-Ac-bNo" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1800.8" y="141.67916041979012"/>
-        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="fdp-1c-qz4">
             <objects>
@@ -118,12 +104,51 @@
                     </tabBar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="uuA-Cg-cj0"/>
-                        <segue destination="tu0-8r-s02" kind="relationship" relationship="viewControllers" id="W1j-M3-J1l"/>
+                        <segue destination="FUk-yV-TB8" kind="relationship" relationship="viewControllers" id="taF-p3-VRc"/>
+                        <segue destination="6Cd-g9-05O" kind="relationship" relationship="viewControllers" id="qlI-zw-qig"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="y5x-v0-SL5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="977" y="139"/>
+        </scene>
+        <!--Map-->
+        <scene sceneID="4j2-0E-CvW">
+            <objects>
+                <viewController id="FUk-yV-TB8" customClass="MapViewController" customModule="TempConverter" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cNf-CK-Tf4"/>
+                        <viewControllerLayoutGuide type="bottom" id="pAf-x6-zPI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="RBb-7S-x8E">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Map" image="MapIcon" id="ALo-3q-5N0"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UG3-k0-DDU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1860" y="139"/>
+        </scene>
+        <!--Web-->
+        <scene sceneID="iuG-Qu-SDI">
+            <objects>
+                <viewController id="6Cd-g9-05O" customClass="WebViewController" customModule="TempConverter" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="sjb-NO-RPV"/>
+                        <viewControllerLayoutGuide type="bottom" id="339-gW-Bl9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="suS-5N-3Sw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Web" id="UJG-wk-sRd"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PWT-g9-IOM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2730" y="139"/>
         </scene>
     </scenes>
     <resources>

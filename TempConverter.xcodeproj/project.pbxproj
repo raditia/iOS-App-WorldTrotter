@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		384A24EB1ED6E6310074B20E /* ConvertionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384A24EA1ED6E6310074B20E /* ConvertionViewController.swift */; };
 		384E20491ED97397009C01D1 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384E20481ED97397009C01D1 /* MapKit.framework */; };
 		386C8CCE1ED5F18A00C90009 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386C8CCD1ED5F18A00C90009 /* AppDelegate.swift */; };
 		386C8CD31ED5F18A00C90009 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 386C8CD11ED5F18A00C90009 /* Main.storyboard */; };
@@ -16,6 +15,8 @@
 		386C8CE31ED5F18A00C90009 /* TempConverterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386C8CE21ED5F18A00C90009 /* TempConverterTests.swift */; };
 		386C8CEE1ED5F18A00C90009 /* TempConverterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386C8CED1ED5F18A00C90009 /* TempConverterUITests.swift */; };
 		389F3FC21EDA30E000B616EE /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389F3FC11EDA30E000B616EE /* MapViewController.swift */; };
+		38F22F231EE654910091252F /* ConvertionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F22F221EE654910091252F /* ConvertionViewController.swift */; };
+		38F22F251EE6620F0091252F /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F22F241EE6620F0091252F /* WebViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		384A24EA1ED6E6310074B20E /* ConvertionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConvertionViewController.swift; path = ../ConvertionViewController.swift; sourceTree = "<group>"; };
 		384E20481ED97397009C01D1 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		386C8CCA1ED5F18A00C90009 /* TempConverter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TempConverter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		386C8CCD1ED5F18A00C90009 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +51,8 @@
 		386C8CED1ED5F18A00C90009 /* TempConverterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempConverterUITests.swift; sourceTree = "<group>"; };
 		386C8CEF1ED5F18A00C90009 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		389F3FC11EDA30E000B616EE /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		38F22F221EE654910091252F /* ConvertionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConvertionViewController.swift; sourceTree = "<group>"; };
+		38F22F241EE6620F0091252F /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,13 +113,14 @@
 		386C8CCC1ED5F18A00C90009 /* TempConverter */ = {
 			isa = PBXGroup;
 			children = (
-				384A24EA1ED6E6310074B20E /* ConvertionViewController.swift */,
+				38F22F221EE654910091252F /* ConvertionViewController.swift */,
 				386C8CCD1ED5F18A00C90009 /* AppDelegate.swift */,
 				386C8CD11ED5F18A00C90009 /* Main.storyboard */,
 				386C8CD41ED5F18A00C90009 /* Assets.xcassets */,
 				386C8CD61ED5F18A00C90009 /* LaunchScreen.storyboard */,
 				386C8CD91ED5F18A00C90009 /* Info.plist */,
 				389F3FC11EDA30E000B616EE /* MapViewController.swift */,
+				38F22F241EE6620F0091252F /* WebViewController.swift */,
 			);
 			path = TempConverter;
 			sourceTree = "<group>";
@@ -279,7 +282,8 @@
 			files = (
 				386C8CCE1ED5F18A00C90009 /* AppDelegate.swift in Sources */,
 				389F3FC21EDA30E000B616EE /* MapViewController.swift in Sources */,
-				384A24EB1ED6E6310074B20E /* ConvertionViewController.swift in Sources */,
+				38F22F231EE654910091252F /* ConvertionViewController.swift in Sources */,
+				38F22F251EE6620F0091252F /* WebViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
